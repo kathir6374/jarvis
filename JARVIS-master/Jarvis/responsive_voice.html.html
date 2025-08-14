@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_KEY"></script>
+</head>
+<body>
+<script>
+    // Get the text from the query string
+    const params = new URLSearchParams(window.location.search);
+    const text = params.get("text") || "Hello, this is Jarvis speaking.";
+    responsiveVoice.speak(text, "UK English Male", {rate: 1});
+</script>
+</body>
+</html>
